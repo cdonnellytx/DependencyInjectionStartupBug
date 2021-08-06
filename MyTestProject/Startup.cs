@@ -15,7 +15,7 @@ namespace MyTestProject
             services.AddSingleton<IMyService, MyService>();
         }
 
-        public IHostBuilder CreateHostBuilder() => Host.CreateDefaultBuilder();
+        public IHostBuilder CreateHostBuilder() => new HostBuilder();
 
         public void ConfigureHost(IHostBuilder hostBuilder) => hostBuilder.ConfigureAppConfiguration(ConfigureAppConfiguration);
 
